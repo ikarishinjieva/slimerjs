@@ -8,13 +8,13 @@ module.metadata = {
   "stability": "experimental"
 };
 
-const { get, format } = require("../console/traceback");
+//const { get, format } = require("../console/traceback");
 
 function deprecateUsage(msg) {
   // Print caller stacktrace in order to help figuring out which code
   // does use deprecated thing
-  let stack = get().slice(2);
-  console.error("DEPRECATED: " + msg + "\n" + format(stack));
+  //let stack = get().slice(2);
+  //console.error("DEPRECATED: " + msg + "\n" + format(stack));
 }
 exports.deprecateUsage = deprecateUsage;
 
